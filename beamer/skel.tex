@@ -1,17 +1,21 @@
 \documentclass[11pt,xcolor=dvipsnames]{beamer}
 
-% put /path/to/bvtex in TEXINPUTS
+% boilerplate:
+\input{defaults}
+\input{beamer/preamble}
+
+\usepackage[outline]{contour}
 
 % some examples here http://latexcolor.com/
 \definecolor{bvtitlecolor}{rgb}{0.98, 0.92, 0.84}
 \definecolor{bvbottomcolor}{rgb}{0.6, 0.4, 0.8}
-
-\input{defaults}
+\definecolor{bvoutline}{rgb}{0.36, 0.54, 0.66}
 \renewcommand{\bvtit}{skel}
-\renewcommand{\bvtitle}{\textcolor{bvtitlecolor}{\Huge Skeleton for Beamer Presentation}}
-\renewcommand{\bvevent}{\textcolor{bvtitlecolor}{\LARGE Test Skeleton Event \\ \bvdate}}
+\renewcommand{\bvtitleauthor}{\LARGE \contour{bvoutline}{Brett Viren}}
+\renewcommand{\bvtitle}{\textcolor{bvtitlecolor}{\Huge \contour{black}{Skeleton for} \\ \contour{black}{Beamer Presentation}}}
+\renewcommand{\bvevent}{\textcolor{bvtitlecolor}{\Large Test Skeleton Event \\ \bvdate}}
 
-\input{beamer/preamble}
+
 
 \begin{document}
 
@@ -19,7 +23,15 @@
   \pagestyle{empty}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth,clip,trim=5mm 0mm 5mm 0mm]{figures/front-cover-sel.png}}
 \begin{frame}
-  \titlepage
+  \begin{center}
+    \bvtitle
+
+    \bvtitleauthor
+
+    \bvinstitution
+
+    \bvevent
+  \end{center}
 \end{frame}
 }
 
