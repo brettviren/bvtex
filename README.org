@@ -1,0 +1,12 @@
+bvtex - Some reusable tex.
+
+* What's here?
+
+Just some latex files to try to make starting new documents more efficient.  Collect some tips and tricks.
+
+* How do I use it?
+
+Mostly for my own notes:
+
+- Copy the [[./wscript]] file
+- Copy the =skel.tex= file from the appropriate directory
