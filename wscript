@@ -3,7 +3,7 @@
 Copy this file locally and modify DOCMAIN
 '''
 
-DOCMAIN = "test-beamer"
+DOCMAIN = "beamer/skel"
 
 top = "."
 out = "output"
