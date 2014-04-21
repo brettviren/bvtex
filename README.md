@@ -1,0 +1,4 @@
+bvtex
+=====
+
+Some reusable tex.
