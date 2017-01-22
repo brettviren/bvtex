@@ -95,3 +95,7 @@ sympy-plots-for-*.tex/
 # xindy
 *.xdy
 
+auto
+test-overlay.pdf
+test-overpic.pdf
+test-underlay.pdf
